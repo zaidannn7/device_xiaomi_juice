@@ -4,6 +4,14 @@ ro.surface_flinger.supports_background_blur=1
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=verify
+pm.dexopt.install=speed-profile
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+
 
 # Disable Rescue Party
 persist.device_config.configuration.disable_rescue_party=true

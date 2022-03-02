@@ -66,6 +66,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GrapheneOSCamera
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
