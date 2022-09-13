@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_juice.mk
+    $(LOCAL_DIR)/potato_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_juice-user \
-    havoc_juice-userdebug \
-    havoc_juice-eng
+    potato_juice-user \
+    potato_juice-userdebug \
+    potato_juice-eng
