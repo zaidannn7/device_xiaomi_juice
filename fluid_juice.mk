@@ -6,8 +6,8 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common potato stuff.
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+# Inherit some common Fluid stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
 
@@ -15,8 +15,13 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
 
+# Fluid stuff
+FLUID_BUILD_TYPE := UNOFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.fluid.maintainer=zaidannn7 \
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := potato_juice
+PRODUCT_NAME := fluid_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
@@ -28,4 +33,4 @@ BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/relea
 
 # Maintainer name overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-potato
+    $(LOCAL_PATH)/overlay-fluid
