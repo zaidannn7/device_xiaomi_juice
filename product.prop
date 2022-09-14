@@ -66,6 +66,9 @@ ro.iorapd.enable=false
 iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
 
+# LMKD
+ro.lmk.log_stats=false
+
 # Media
 ro.config.media_vol_steps=8
 persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
