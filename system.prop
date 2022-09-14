@@ -14,6 +14,9 @@ vendor.bluetooth.soc=cherokee
 persist.vendor.quick.charge=1
 ro.charger.enable_suspend=true
 
+# Display
+debug.performance.tuning=1
+
 # IMS
 persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
