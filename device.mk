@@ -23,6 +23,12 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/juice/juice-vendor.mk)
 
+# Soong Namespace
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+PRODUCT_BUILD_SUPER_PARTITION := false
+>>>>>>> parent of 1426d0b (juice: add bt_stack_qti.conf to soong namespaces)
 BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
