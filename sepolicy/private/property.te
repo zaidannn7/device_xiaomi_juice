@@ -3,3 +3,16 @@ type sensors_prop, property_type;
 type vendor_adsprpc_prop, property_type;
 type vendor_display_prop, property_type;
 type camera_prop, property_type;
+
+treble_sysprop_neverallow(`
+
+enforce_sysprop_owner(`
+  neverallow { domain -init -dumpstate }{
+    property_type
+    -system_property_type
+    -product_property_type
+    -vendor_property_type
+  }:file no_rw_file_perms;
+')
+
+')
