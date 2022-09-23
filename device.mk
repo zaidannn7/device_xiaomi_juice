@@ -219,12 +219,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor
 
-# Soong Namespace
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
-
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
