@@ -23,6 +23,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/juice/juice-vendor.mk)
 
+# Soong Namespace
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
