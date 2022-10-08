@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lighthouse_juice.mk
+    $(LOCAL_DIR)/krypton_juice.mk
 
 COMMON_LUNCH_CHOICES := \
-    lighthouse_juice-user \
-    lighthouse_juice-userdebug \
-    lighthouse_juice-eng
+    krypton_juice-user \
+    krypton_juice-userdebug \
+    krypton_juice-eng

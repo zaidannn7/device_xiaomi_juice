@@ -6,9 +6,8 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common lighthouse stuff.
-$(call inherit-product, vendor/lighthouse/config/common.mk)
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+# Inherit some common krypton stuff.
+$(call inherit-product, vendor/krypton/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 
 # Bootanimation
@@ -17,7 +16,7 @@ TARGET_SCREEN_HEIGHT := 2340
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lighthouse_juice
+PRODUCT_NAME := krypton_juice
 PRODUCT_DEVICE := juice
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := sm6115
